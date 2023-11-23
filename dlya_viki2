@@ -1,0 +1,16 @@
+first_line = "25.05.03 Технический эксплуатация транспортного радиооборудования"
+second_line = "Радиосвязь и электрорадионавигация морского флота"
+
+# Удаляем пробелы и заменяем точки на пустую строку
+first_line_cleaned = first_line.replace(" ", "").replace(".", "")
+# Берем первые буквы каждого слова и приводим к верхнему регистру
+first_line_acronym = "".join(word[0].upper() for word in first_line_cleaned.split())
+
+# Удаляем пробелы и заменяем точки на пустую строку
+second_line_cleaned = second_line.replace(" ", "").replace(".", "")
+# Берем первые буквы каждого слова и приводим к верхнему регистру
+second_line_acronym = "".join(word[0].upper() for word in second_line_cleaned.split())
+
+# Выводим результат
+print(f"{first_line_cleaned[:6]}_{first_line_acronym[:4]}_{second_line_acronym[:5]}")
+# Вывод: 250503_TETR_RiEMF
