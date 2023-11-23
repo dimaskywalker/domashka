@@ -8,4 +8,4 @@ word_list = ["вишня", "лес", "шалаш", "змееед", "орнаме
 
 words_with_get_tripled_letters = [word for word in word_list if get_tripled_letters(word)]
 
-print(words_with_get_tripled_letters)
+print("Слова, в которых три буквы подряд одинаковые:", (words_with_get_tripled_letters))
