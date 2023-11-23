@@ -1,0 +1,11 @@
+def get_tripled_letters(word):
+    for i in range(len(word) - 2):
+        if word[i] == word[i+1] == word[i+2]:
+            return True
+    return False
+
+word_list = ["вишня", "лес", "шалаш", "змееед", "орнамент", "гвоздика", "сел", "глаз", "оса", "солнце", "мед", "плита",]
+
+words_with_get_tripled_letters = [word for word in word_list if get_tripled_letters(word)]
+
+print(words_with_get_tripled_letters)
